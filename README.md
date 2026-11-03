@@ -1,6 +1,6 @@
 # PHP2Shell (CVE-2026-109618 / CVE-2026-109619)
 
-This repository contains a Python Proof of Concept (PoC) and an isolated Docker-based lab environment for reproducing and analyzing the PHP2Shell vulnerability.
+This repository contains a Python Proof of Concept (PoC) executed in an isolated Docker-based lab environment for reproducing and analyzing the PHP2Shell vulnerability.
 
 The vulnerability is a pre-authentication Remote Code Execution (RCE) flaw in PHP resulting from Out-of-Memory (OOM) bailout state corruption. The exploit specifically targets the Apache `mod_php` SAPI and abuses the `session.upload_progress` feature to trigger a Use-After-Free (UAF), bypass ASLR, and execute arbitrary commands.
 
